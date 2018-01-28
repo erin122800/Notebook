@@ -14,3 +14,10 @@
 .contactUs {
     background: white;
 }
+.TeamPic {
+    height: 50%;
+    width: 50%;
+}
+.ContactPic{
+    max-width: 100%;
+}
