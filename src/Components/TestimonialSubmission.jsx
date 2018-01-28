@@ -15,6 +15,10 @@ export default class TestimonialSubmission extends Component {
         this.context.API.uploadData({
             name: this.nameField.value,
             testimony: this.testimonialField.value
+        }).then(() => {
+            this.nameField.value = '';
+            this.testimonialField.value = '';
+            this.props.onSubmit();
         });
         return false;
     }
