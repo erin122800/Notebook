@@ -51,7 +51,7 @@ class App extends Component {
               <p> &copy; 2018 </p>
             </a>
           </div>
-          <div>
+          <div className="logo">
             <img src={logo} className="footer-logo" alt="logo" />
           </div>
         </footer>

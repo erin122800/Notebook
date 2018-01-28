@@ -32,3 +32,20 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+footer{
+  text-align: left;
+  padding: 50px 70px;
+  height: 200px;
+  display: flex;
+}
+
+footer div{
+  flex: 4 1 auto;
+  min-width: 300px;
+}
+.logo{
+  flex: 0 0 auto;
+  width: 80px;
+  min-width: auto;
+}
