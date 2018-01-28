@@ -4,7 +4,7 @@
   }
   
   .navbar a:active {
-    color: orange;
+    color: rgb(0, 32, 138);
   }
   
   .navbar {
@@ -12,7 +12,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #111;
+    background-color: #55b3b4;
   }
   .navbar li {
     display: inline-block;
@@ -34,5 +34,5 @@
     padding: 14px 16px;
   }
   .navbar li a:hover {
-    background-color: #000000;
+    background-color: #45a3a4;
 }

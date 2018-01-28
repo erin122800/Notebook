@@ -4,7 +4,8 @@
 
 .App-logo {
   height: 80px;
-  float: left;
+  position:absolute;
+  left:20px;
 }
 .footer-logo{
   height: 80px;

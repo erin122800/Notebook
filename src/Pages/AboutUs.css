@@ -1,3 +1,6 @@
 .AboutUs p {
     padding: 0px 70px;
+    font-size: 1.6em;
+    text-align: left;
+    line-height: 1.33;
 }

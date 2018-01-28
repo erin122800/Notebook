@@ -31,8 +31,9 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+        <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Dynami</h1>
+          
         </header>
         <NavBar pages={pages} onChange={this.navigate}/>
         <Page />
