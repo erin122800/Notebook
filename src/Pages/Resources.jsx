@@ -13,10 +13,16 @@ export default class Resources extends Component {
         this.state = {
             data: null
         };
+        
+        this.getTestimonials = this.getTestimonials.bind(this);
     }
-    async componentDidMount() {
+
+    async getTestimonials() {
         var data = await this.context.API.getData();
         this.setState({data});
+    }
+    async componentDidMount() {
+        this.getTestimonials();
     }
     render(){
         return (<div>
@@ -33,7 +39,7 @@ export default class Resources extends Component {
         <h1>Testimonials</h1>
         {this.state.data && <TestimonialList results={this.state.data}/>}
         <p className = "testimonialText">If you, a friend, or a relative has been helped by Dynami, feel free to leave a testimonial about it! If you do not want to share your name, put "Anonymous" in the name submission form.</p>
-        <TestimonialSubmission/>
+        <TestimonialSubmission onSubmit ={this.getTestimonials}/>
     </div>);
     }
 }
