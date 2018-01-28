@@ -56,7 +56,7 @@ class App extends Component {
           </div>
         </footer>
         <ScrollToTop showUnder={160}>
-  <img src={Arrow} />
+  <img src={Arrow}  alt = "scroll to top" /> 
 </ScrollToTop>
       </div>
     );
