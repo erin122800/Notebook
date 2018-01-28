@@ -6,6 +6,10 @@
   height: 80px;
   float: left;
 }
+.footer-logo{
+  height: 80px;
+  float: center;
+}
 
 .App-header {
   background-color: #222;
