@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 
-async function getData(uri) {
+async function getData() {
     var response = await fetch ("https://wctd2018-a26c.restdb.io/rest/testimonials", {
     headers: new Headers({
         "content-type": "application/json",
@@ -13,7 +13,7 @@ async function getData(uri) {
     return data;
 }
 
-async function uploadData(uri, data) {
+async function uploadData(data) {
     var response = await fetch ("https://wctd2018-a26c.restdb.io/rest/testimonials", {
         method: "POST",
         body: JSON.stringify(data),
