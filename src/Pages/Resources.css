@@ -1,9 +1,11 @@
 .locationsText {
+    font-size: 125%;
     padding-left: 160px;
     padding-right: 160px;
 }
 
 .locationsList {
+    font-size: 125%;
     list-style-type: none;
     margin: 0;
     padding: 0;
