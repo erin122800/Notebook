@@ -4,6 +4,7 @@ import Parallax from 'react-lazy-parallax';
 import TestimonialList from '../Components/TestimonialList';
 import ResourcesBG from '../Assets/ResourcesBG.jpg';
 import PropTypes from 'prop-types';
+import TestimonialSubmission from "../Components/TestimonialSubmission";
 
 export default class Resources extends Component {
     constructor(props, context) {
@@ -32,15 +33,7 @@ export default class Resources extends Component {
         <h1>Testimonials</h1>
         {this.state.data && <TestimonialList results={this.state.data}/>}
         <p className = "testimonialText">If you, a friend, or a relative has been helped by Dynami, feel free to leave a testimonial about it! If you do not want to share your name, put "Anonymous" in the name submission form.</p>
-        <form action>
-            <p>Name:</p>
-            <input className = "nameInput" type="text" name = "name"/>
-            <br></br>
-            <p>Testimonial:</p>
-            <textarea className = "testimonialInput" rows="4" columns="50"/>
-            <br></br>
-            <input type="submit" value = "submit"/>
-        </form>
+        <TestimonialSubmission/>
     </div>);
     }
 }
