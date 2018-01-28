@@ -29,3 +29,10 @@
 .testimonialText{
     padding: 0px 60px
 }
+
+.childrenResources ul {
+    list-style-type: none;
+}
+.adultResources ul {
+    list-style-type: none;
+}
