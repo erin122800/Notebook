@@ -6,10 +6,12 @@ export default class TestimonialSubmission extends Component {
         super(props, context);
         this.nameField = null;
         this.testimonialField = null;
+        this.sendTestimonial = this.sendTestimonial.bind(this);
         
     }
     sendTestimonial(evt) {
         evt.preventDefault();
+        console.log("I got here!");
         this.context.API.uploadData({
             name: this.nameField.value,
             testimony: this.testimonialField.value
@@ -18,7 +20,7 @@ export default class TestimonialSubmission extends Component {
     }
     render(){
         return(
-            <form action>
+            <form onSubmit={this.sendTestimonial}>
             <p>Name:</p>
             <input className = "nameInput" type="text" name = "name" ref={el =>(this.nameField = el)}/>
             <br></br>
