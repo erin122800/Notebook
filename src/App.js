@@ -45,7 +45,7 @@ class App extends Component {
               <p> @ProjectDynami on Twitter</p>
             </a>
             <a href="https://www.facebook.com/Dynami-Project-1002872376531590/">
-              <p> "Project Dynami" on Facebook</p>
+              <p> "Dynami Project" on Facebook</p>
             </a>
             <a>
               <p> &copy; 2018 </p>
