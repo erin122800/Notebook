@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import './Resources.css';
 import Parallax from 'react-lazy-parallax';
 import TestimonialList from '../Components/TestimonialList';
-import ResourcesBG1 from '../Assets/ResourcesBG.jpg';
+import ResourcesBG from '../Assets/ResourcesBG.jpg';
 import PropTypes from 'prop-types';
 
 export default class Resources extends Component {
@@ -28,7 +28,7 @@ export default class Resources extends Component {
         </ul>
         <br></br>
         <br></br>
-        <Parallax image={ResourcesBG1} style={{minHeight: 600}} />
+        <Parallax image={ResourcesBG} style={{minHeight: 400}} />
         <h1>Testimonials</h1>
         {this.state.data && <TestimonialList results={this.state.data}/>}
         <p className = "testimonialText">If you, a friend, or a relative has been helped by Dynami, feel free to leave a testimonial about it! If you do not want to share your name, put "Anonymous" in the name submission form.</p>

@@ -35,8 +35,10 @@
 
 footer{
   text-align: left;
-  padding: 50px 70px;
-  height: 200px;
+  margin-top: 50px;
+  border-top: solid black;
+  padding: 25px 70px;
+  height: 150px;
   display: flex;
 }
 
@@ -46,6 +48,7 @@ footer div{
 }
 .logo{
   flex: 0 0 auto;
+  padding: 20px;
   width: 80px;
   min-width: auto;
 }
