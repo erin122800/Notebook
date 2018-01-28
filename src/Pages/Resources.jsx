@@ -1,9 +1,23 @@
-import React from "react";
+import React, {Component} from "react";
 import './Resources.css';
 import Parallax from 'react-lazy-parallax';
+import TestimonialList from '../Components/TestimonialList';
+import PropTypes from 'prop-types';
 
-export default () => (
-    <div> 
+export default class Resources extends Component {
+    constructor(props, context) {
+        super(props, context);
+
+        this.state = {
+            data: null
+        };
+    }
+    async componentDidMount() {
+        var data = await this.context.API.getData();
+        this.setState({data});
+    }
+    render(){
+        return (<div>
         <h1>Resources</h1>
         <p className = "locationsText">Currently, we have locations in New York, Pennsylvania, and Ohio, where anyone can come and receive the help that they need. Our therapists will be available during hours to listen to your situation, offer advice, and more. We are always looking to expand and offer our locations across the nation. These are our addresses:</p>
         <ul className = "locationsList">
@@ -12,6 +26,7 @@ export default () => (
         <li><b>Ohio</b> : 2830 Napoleon Road, Fremont, OH 43420</li>
         </ul>
         <h1>Testimonials</h1>
+        {this.state.data && <TestimonialList results={this.state.data}/>}
         <p className = "testimonialText">If you, a friend, or a relative have been helped by Dynami, feel free to leave a testimonial about it! If you do not want to share your name, put "Anonymous" in the name submission form.</p>
         <form action>
             <p>Name:</p>
@@ -22,5 +37,10 @@ export default () => (
             <br></br>
             <input type="submit" value = "submit"/>
         </form>
-    </div>
-);
+    </div>);
+    }
+}
+
+Resources.contextTypes = {
+    API: PropTypes.object
+};
