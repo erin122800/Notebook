@@ -1,4 +1,25 @@
 .locationsText {
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 160px;
+    padding-right: 160px;
+}
+
+.locationsList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nameInput {
+    width: 200px;
+}
+
+.testimonialInput{
+    padding-left:0;
+    padding-top:0;
+    padding-bottom:0.4em;
+    padding-right: 0.4em;
+    height: 200px;
+    width: 600px;
+
 }
