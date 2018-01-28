@@ -1,6 +1,6 @@
 import React from "react";
 import './ContactUs.css';
-import FBlogo from './src/Assets/facebooklogo.png';
+import FBlogo from '../Assets/facebooklogo.png';
 
 export default () => (
     <div className="contactUs"> 
