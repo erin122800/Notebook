@@ -36,7 +36,23 @@ class App extends Component {
         </header>
         <NavBar pages={pages} onChange={this.navigate}/>
         <Page />
-      </div>
+        <footer>
+          <div>
+            <a href = "https://twitter.com/ProjectDynami?lang=en"> 
+            <p> @ProjectDynami on Twitter</p>
+            </a>
+            <a href = "https://www.facebook.com/Dynami-Project-1002872376531590/">
+            <p> "Project Dynami" on Facebook</p>
+            </a>
+           </div>
+            <div>
+              <p>&copy; 2018 </p>
+            </div>
+              <div>
+            <img src={logo} className="footer-logo" alt="logo" />
+             </div>
+        </footer>
+      </div> 
     );
   }
 }
