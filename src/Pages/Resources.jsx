@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import './Resources.css';
 import Parallax from 'react-lazy-parallax';
 import TestimonialList from '../Components/TestimonialList';
+import ResourcesBG1 from '../Assets/ResourcesBG.jpg';
 import PropTypes from 'prop-types';
 
 export default class Resources extends Component {
@@ -25,9 +26,12 @@ export default class Resources extends Component {
         <li><b>Pennsylvania</b>: 121 Summit Street, Darby, PA 19023</li>
         <li><b>Ohio</b> : 2830 Napoleon Road, Fremont, OH 43420</li>
         </ul>
+        <br></br>
+        <br></br>
+        <Parallax image={ResourcesBG1} style={{minHeight: 600}} />
         <h1>Testimonials</h1>
         {this.state.data && <TestimonialList results={this.state.data}/>}
-        <p className = "testimonialText">If you, a friend, or a relative have been helped by Dynami, feel free to leave a testimonial about it! If you do not want to share your name, put "Anonymous" in the name submission form.</p>
+        <p className = "testimonialText">If you, a friend, or a relative has been helped by Dynami, feel free to leave a testimonial about it! If you do not want to share your name, put "Anonymous" in the name submission form.</p>
         <form action>
             <p>Name:</p>
             <input className = "nameInput" type="text" name = "name"/>
