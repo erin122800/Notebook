@@ -1,6 +1,7 @@
 import React from "react";
 import './ContactUs.css';
-import FBlogo from './src/Assets/facebooklogo.png';
+import FBlogo from '../Assets/facebooklogo.png';
+import TWlogo from '../Assets/twitterlogo.png';
 
 export default () => (
     <div className="contactUs"> 
@@ -10,6 +11,7 @@ export default () => (
         <p className="contactParagraph">Add us on social media!</p>
         <div className = "imageDiv">
         <   img src={FBlogo} className="FBlogo" alt="facebook logo" />
+        <   img src={TWlogo} className="TWlogo" alt="twitter logo" />
         </div>
     </div>
 );
