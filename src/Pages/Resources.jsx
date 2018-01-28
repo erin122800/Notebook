@@ -35,6 +35,26 @@ export default class Resources extends Component {
         </ul>
         <br></br>
         <br></br>
+        <h2>Other Resources</h2>
+        <p>There are many ways for you to get help when you need it. Here are a few resources that you can consult:</p>
+        <ul className = "otherResources">
+        <li><b>National Suicide Prevention Lifeline</b>: <br></br> 1-800-273-8255 </li>
+        <li><a href = "https://www.stopbullying.gov/resources"> Stop Bullying Resources</a></li>
+        <li><a href = "https://www.ncab.org.au/get-help/">Get Help from the National Centre Against Bullying</a></li>
+        </ul>
+        <h3>Resources for Children and Teens</h3>
+        <ul classname = "childrenResources">
+        <li><a href = "https://www.pacerkidsagainstbullying.org/">Kids Against Bullying</a></li>
+        <li><a href = "https://www.pacerteensagainstbullying.org/#/home">Teens Against Bullying</a></li>
+        <li><a href = "http://stompoutbullying.org/">Stomp Out Cyber Bullying and Bullying at School</a></li>
+        <li><a href = "https://www.thetrevorproject.org/">The Trevor Project for LGBTQ+</a></li>
+        </ul>
+        <h3>Resources for Parents and Teachers</h3>
+        <li><a href = "http://www.welcomingschools.org/">Welcoming Schools</a></li>
+        <li><a href = "https://www.glsen.org/">Gay Lesbian Straight Education Network</a></li>
+        <li><a href = "http://familyproject.sfsu.edu/">Family Acceptance Project</a></li>
+        <br></br>
+        <br></br>
         <Parallax image={ResourcesBG} style={{minHeight: 400}} />
         <h1>Testimonials</h1>
         {this.state.data && <TestimonialList results={this.state.data}/>}
