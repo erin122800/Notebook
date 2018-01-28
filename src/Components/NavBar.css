@@ -7,6 +7,13 @@
     color: orange;
   }
   
+  .navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #111;
+  }
   .navbar li {
     display: inline-block;
     list-style: none;
@@ -17,3 +24,15 @@
     padding-left: 0;
     margin-left: 0;  
   }
+
+  .navbar li a {
+    display: block;
+    width: 120px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+  }
+  .navbar li a:hover {
+    background-color: #000000;
+}
