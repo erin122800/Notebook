@@ -1,13 +1,16 @@
-.contactHeader {
-    color: rgb(225, 0, 255);
-}
 
 .FBlogo {
-    height: 206px;
-    width: 206px;
+    height: 103px;
+    width: 103px;
+    padding: 40px;
 }
 
 .TWlogo {
-    height: 206px;
-    width: 206px;
+    height: 103px;
+    width: 103px;
+    padding: 40px;
+}
+
+.contactUs {
+    background: white;
 }
