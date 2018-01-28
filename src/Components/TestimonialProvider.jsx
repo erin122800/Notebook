@@ -23,8 +23,8 @@ async function uploadData(uri, data) {
             "cache-control": "no-cache"
           })
         });
-        var data = await response.json();
-        return data;
+        var status = await response.json();
+        return status;
 }
 
 const API = {
