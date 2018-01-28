@@ -11,10 +11,10 @@
     },
     "scripts": {
         "start": "react-scripts start",
-        "build": "react-scripts build",
+        "build": "cross-env PUBLIC_URL=https://wctd-jemini.github.io/DYNAMI/ react-scripts build",
         "test": "react-scripts test --env=jsdom",
         "eject": "react-scripts eject",
-        "deploy": "cross-env PUBLIC_URL=https://wctd-jemini.github.io/DYNAMI/ gh-pages -d build"
+        "deploy": "cross-env NODE_DEBUG=gh-pages gh-pages -d build"
     },
     "devDependencies": {
         "cross-env": "^5.1.3",
