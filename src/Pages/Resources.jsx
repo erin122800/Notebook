@@ -11,7 +11,7 @@ export default () => (
         </div>
 
         <h1>Testimonials</h1>
-        <p className = "testimonialText">If you, a friend, or a relative have been helped by Dynami, feel free to leave a testimonial about it! If you do not want to share your name, put "Anonymous" in the name submission form.</p>;
+        <p className = "testimonialText">If you, a friend, or a relative have been helped by Dynami, feel free to leave a testimonial about it! If you do not want to share your name, put "Anonymous" in the name submission form.</p>
         <form action>
             Name: <input className = "nameInput" type="text" name = "name"/>
             Testimonal: <input className = "testimonialInput" type = "text" name = "testimonial"/>
