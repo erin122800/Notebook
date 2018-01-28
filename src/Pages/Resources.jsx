@@ -44,14 +44,14 @@ export default class Resources extends Component {
         <li><a href = "https://www.ncab.org.au/get-help/">Get Help from the National Centre Against Bullying</a></li>
         </ul>
         <h3>Resources for Children and Teens</h3>
-        <ul classname = "childrenResources">
+        <ul className = "childrenResources">
         <li><a href = "https://www.pacerkidsagainstbullying.org/">Kids Against Bullying</a></li>
         <li><a href = "https://www.pacerteensagainstbullying.org/#/home">Teens Against Bullying</a></li>
         <li><a href = "http://stompoutbullying.org/">Stomp Out Cyber Bullying and Bullying at School</a></li>
         <li><a href = "https://www.thetrevorproject.org/">The Trevor Project for LGBTQ+</a></li>
         </ul>
         <h3>Resources for Parents and Teachers</h3>
-        <ul classname = "adultResources">
+        <ul className = "adultResources">
         <li><a href = "http://www.welcomingschools.org/">Welcoming Schools</a></li>
         <li><a href = "https://www.glsen.org/">Gay Lesbian Straight Education Network</a></li>
         <li><a href = "http://familyproject.sfsu.edu/">Family Acceptance Project</a></li>
