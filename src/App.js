@@ -7,6 +7,7 @@ import ContactUs from "./Pages/ContactUs";
 import Resources from "./Pages/Resources";
 import ScrollToTop from 'react-scroll-up';
 import Arrow from './Assets/arrow-circle-top-4x.png';
+import TestimonialProvider from "./Components/TestimonialProvider";
 
 const pages = [
   { name: 'About Us', component: AboutUs },
@@ -38,7 +39,9 @@ class App extends Component {
 
         </header>
         <NavBar pages={pages} onChange={this.navigate} />
-        <Page />
+        <TestimonialProvider>
+          <Page />
+        </TestimonialProvider>
         <footer>
           <div>
             <a href="https://twitter.com/ProjectDynami?lang=en">
@@ -56,8 +59,8 @@ class App extends Component {
           </div>
         </footer>
         <ScrollToTop showUnder={160}>
-  <img src={Arrow}  alt = "scroll to top" /> 
-</ScrollToTop>
+          <img src={Arrow} alt="scroll to top" />
+        </ScrollToTop>
       </div>
     );
   }

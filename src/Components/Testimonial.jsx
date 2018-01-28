@@ -1,8 +1,9 @@
 import React from "react";
 
 export default ({ name, testimony } = {}) => (
-    <ul>
-        <li>Name: {name}</li>
-        <li>Testimony: {testimony}</li>
-    </ul>
+    <div>
+        <p>Name: {name}</p>
+        <p>Testimony: {testimony}</p>
+        <br/>
+    </div>
 );
