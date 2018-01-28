@@ -2,7 +2,7 @@ import React from "react";
 
 export default () => (
     <div> 
-        <h1> </h1>
+        <h1>Contact Us</h1>
         <p> </p>
     </div>
 );

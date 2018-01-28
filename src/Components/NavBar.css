@@ -1,0 +1,19 @@
+.navbar a{
+    color: blue;
+    padding-right: 1em;
+  }
+  
+  .navbar a:active {
+    color: orange;
+  }
+  
+  .navbar li {
+    display: inline-block;
+    list-style: none;
+  }
+  
+  .navbar {
+    text-indent: 0;
+    padding-left: 0;
+    margin-left: 0;  
+  }
