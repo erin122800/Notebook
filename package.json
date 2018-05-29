@@ -1,5 +1,5 @@
 {
-    "name": "dynami",
+    "name": "notebook",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
@@ -11,7 +11,7 @@
     },
     "scripts": {
         "start": "react-scripts start",
-        "build": "cross-env PUBLIC_URL=https://wctd-jemini.github.io/DYNAMI/ react-scripts build",
+        "build": "cross-env PUBLIC_URL=https://erin122800.github.io/Notebook/ react-scripts build",
         "test": "react-scripts test --env=jsdom",
         "eject": "react-scripts eject",
         "deploy": "cross-env NODE_DEBUG=gh-pages gh-pages -d build"
@@ -20,5 +20,5 @@
         "cross-env": "^5.1.3",
         "gh-pages": "^1.1.0"
     },
-    "homepage": "https://wctd-jemini.github.io/DYNAMI/"
+    "homepage": "https://erin122800.github.io/Notebook/"
 }
